@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/social_spark_for_cora"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/stay_connected_one_spark_at_a_time"
+        android:textColor="#546E7A"
+        android:textSize="14sp" />
+
+    <!-- Input Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/enter_time_of_day"
+        android:textSize="16sp"
+        android:textColor="#555555" />
+
+    <!-- Text Input -->
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/e_g_morning_afternoon_dinner"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="#333333"
+        android:textColorHint="#757575"
+        android:textSize="16sp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Get Spark Button -->
+    <Button
+        android:id="@+id/btnGetSpark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/get_social_spark"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:padding="12dp"
+        android:textSize="16sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#9E9E9E"
+        android:padding="12dp"
+        android:text="@string/reset"
+        android:textColor="#311B92"
+        android:textSize="16sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Suggestion Display -->
+    <TextView
+        android:id="@+id/suggestionDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:text="@string/your_social_spark_will_appear_here"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
